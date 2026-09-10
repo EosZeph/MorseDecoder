@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>MorseDecoder</AssemblyName>
+    <RootNamespace>MorseDecoder.App</RootNamespace>
+    <Product>Morse CW Decoder Win7</Product>
+    <AssemblyTitle>Morse CW Decoder Win7</AssemblyTitle>
+    <Description>Legacy Windows 7 x86 build of the portable CW decoder.</Description>
+    <Version>0.1.0</Version>
+    <FileVersion>0.1.0.0</FileVersion>
+    <ApplicationIcon>..\..\src\MorseDecoder.App\Assets\MorseDecoder.ico</ApplicationIcon>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MorseDecoder.Core\MorseDecoder.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\src\Shared\IsExternalInit.cs" Link="Compatibility\IsExternalInit.cs" />
+    <ApplicationDefinition Include="..\..\src\MorseDecoder.App\App.xaml" Link="App.xaml" />
+    <Page Include="..\..\src\MorseDecoder.App\MainWindow.xaml" Link="MainWindow.xaml" />
+    <Compile Include="..\..\src\MorseDecoder.App\App.xaml.cs" Link="App.xaml.cs" />
+    <Compile Include="..\..\src\MorseDecoder.App\MainWindow.xaml.cs" Link="MainWindow.xaml.cs" />
+    <Compile Include="..\..\src\MorseDecoder.App\Rendering\WaterfallBitmap.cs" Link="Rendering\WaterfallBitmap.cs" />
+    <Compile Include="..\..\src\MorseDecoder.App\ViewModels\TrackRow.cs" Link="ViewModels\TrackRow.cs" />
+    <Resource Include="..\..\src\MorseDecoder.App\Assets\MorseDecoder.ico" Link="Assets\MorseDecoder.ico" />
+  </ItemGroup>
+</Project>

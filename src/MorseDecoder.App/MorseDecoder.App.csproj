@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>MorseDecoder</AssemblyName>
+    <RootNamespace>MorseDecoder.App</RootNamespace>
+    <Product>Morse CW Decoder</Product>
+    <AssemblyTitle>Morse CW Decoder</AssemblyTitle>
+    <Description>Portable multi-signal CW decoder for Windows.</Description>
+    <Version>0.1.0</Version>
+    <FileVersion>0.1.0.0</FileVersion>
+    <ApplicationIcon>Assets\MorseDecoder.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MorseDecoder.Core\MorseDecoder.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\MorseDecoder.ico" />
+  </ItemGroup>
+</Project>

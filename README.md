@@ -1,4 +1,4 @@
-![Image text](https://raw.githubusercontent.com/EosZeph/MorseDecoder/refs/heads/main/MorseDecoder.ico)
+![Image text](https://raw.githubusercontent.com/EosZeph/MorseDecoder/refs/heads/main/MorseDecoder.ico?token=GHSAT0AAAAAAEISLLUVBE4ZLOHSS2JRARWS2VC3WIQ)
 
 # Morse Decoder
 

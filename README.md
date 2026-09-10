@@ -1,3 +1,5 @@
+![Image text](https://raw.githubusercontent.com/EosZeph/MorseDecoder/refs/heads/main/MorseDecoder.ico)
+
 # Morse Decoder
 
 Windows 声卡输入的多信号 CW 实时解码原型。
